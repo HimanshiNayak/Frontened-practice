@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- <style>
+        body{
+           margin:0;
+           padding:0;
+           /* background-color: rgb(33, 33, 33); */
+        }
+    </style> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(218, 236, 236);
+        }
+        #div2 {
+            position: relative;
+        }
+        #img1 {
+            width: 100%;
+        }
+        #div2 p {
+            position: absolute;
+            top: 5%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+            font-size: 40px;
+            font-weight: 500;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">Welcome to Star-Bucks</div>
+    <div id="div2">
+        <img id="img1" src="starbucks-wallpaper.jpg">
+        <pre><p>“It's not just coffee,
+            it's Starbucks.”</p></pre>
+    </div>
+    <footer>@ All rights are reserved.</footer>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#d1").css({
+            "width": "100%",
+            "background-color": "rgb(33, 33, 33)",
+            "height": "96px",
+            "font-size": "55px",
+            "font-weight": "900",
+            "color": "white",
+            "text-align": "center"
+        });
+        $("footer").css({
+            "width": "100%",
+            "background-color": "black",
+            "color": "white",
+            "height": "56px",
+            "text-align": "center",
+            "padding": "15px",
+            "margin-top": "0",
+        });
+        $("#div2").css("color", "aliceblue");
+        $("footer, #d1").css("width", "100%");
+        $("footer").css("height", "26px");
+    });
+</script>
+</html>
+
 
